@@ -41,7 +41,8 @@ data "aws_subnets" "public" {
   filter {
     name   = "vpc-id"
     #values = [data.aws_vpc.default.id]
-    values = "subnet-0ad539887289d646a"
+    values = ["vpc-0507bb27b78db3264"]
+    #values = "subnet-0ad539887289d646a"
   }
 }
 #cluster provision
