@@ -52,7 +52,7 @@ resource "aws_eks_cluster" "example" {
 
   vpc_config {
     #subnet_ids = data.aws_subnets.public.ids
-    subnet_ids = ["subnet-0ad539887289d646a", "subnet-0e1335dcc009f9f99"]
+    subnet_ids = [subnet-0ad539887289d646a, subnet-0e1335dcc009f9f99]
   }
 
   # Ensure that IAM Role permissions are created before and deleted after EKS Cluster handling.
